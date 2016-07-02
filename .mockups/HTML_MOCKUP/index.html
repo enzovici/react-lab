@@ -1,0 +1,860 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" href="img/favicon/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" href="img/favicon/apple-touch-icon.png">
+		
+		<!-- Fonts -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='fonts/fonts.css' rel='stylesheet' type='text/css'>
+		
+		<!-- Stylesheet -->
+        <link rel="stylesheet" href="css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+    </head>
+    <body>
+
+    	<div class="header-area">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-sm-12">
+    					<div class="header-top">
+    						<ul>
+    							<li><a href="#">Invoices</a></li>
+    							<li><a href="#">Customers</a></li>
+    							<li><a href="#">Analytics</a></li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="row">
+    				<div class="col-sm-12">
+    					<div class="header-title">
+    						<h2>Invoices</h2>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".menu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+    					</div>    					
+    				</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+    					<div class="menu collapse navbar-collapse">
+    						<ul>
+    							<li class="active"><a data-toggle="tab" href="#invoiceoverview">invoice overview</a></li>
+    							<li><a data-toggle="tab" href="#sentinvoices">sent invoices</a></li>
+    							<li><a data-toggle="tab" href="#invoicestopay">invoices to pay<span>3</span></a></li>
+    							<li><a data-toggle="tab" href="#drafts">drafts</a></li>
+    						</ul>
+    					</div>						
+					</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="main-body-area">
+    		<div class="container main-body">
+    			<div class="row">
+    				<div class="col-sm-12">
+    					<div class="main-body-title">
+                            <button id="creat-invoice-open"><i class="fa fa-file-text-o"></i>New Invoice</button>
+    						<button id="creat-invoice-close"><i class="fa fa-times"></i></button>
+    					</div>
+    				</div>
+    			</div>
+    			<div id="invoices" class="row">
+    				<div class="col-sm-12">
+                        <div class="invoices-list tab-content">
+                            <div id="invoiceoverview" class="single-invoices tab-pane fade in active">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single-body">
+                                            <div class="single-body-header">
+                                                <div class="invoice-title-bar-left">
+                                                    <h2>Sent invoices</h2>
+                                                </div>
+                                                <div class="invoice-title-bar-right view">
+                                                    <div class="filter">
+                                                        <select name="" class="selectpicker">
+                                                            <option value="">Newest First</option>
+                                                            <option value="">Oldest First</option>
+                                                        </select>
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                            <div class="invoices-list single">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <ul>
+                                                                    <li class="active"><span>Sent</span></li>
+                                                                    <li><span>Agreed</span></li>
+                                                                    <li><span>On offter</span></li>
+                                                                    <li><span>Financed</span></li>
+                                                                    <li><span>Payed</span></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <ul>
+                                                                    <li class="active"><span>Sent</span></li>
+                                                                    <li><span>Agreed</span></li>
+                                                                    <li><span>On offter</span></li>
+                                                                    <li><span>Financed</span></li>
+                                                                    <li><span>Payed</span></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <ul>
+                                                                    <li class="visited"><span>Sent</span></li>
+                                                                    <li class="active"><span>Agreed</span></li>
+                                                                    <li><span>On offter</span></li>
+                                                                    <li><span>Financed</span></li>
+                                                                    <li><span>Payed</span></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td class="option"><i class="fa fa-tag"></i><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <ul>
+                                                                    <li class="visited"><span>Sent</span></li>
+                                                                    <li class="active not"><span>Not Agreed</span></li>
+                                                                    <li><span>On offter</span></li>
+                                                                    <li><span>Financed</span></li>
+                                                                    <li><span>Payed</span></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td class="option"><img src="img/chat.png" alt=""><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <ul>
+                                                                    <li class="visited"><span>Sent</span></li>
+                                                                    <li class="visited"><span>Agreed</span></li>
+                                                                    <li class="active"><span>On offter</span></li>
+                                                                    <li><span>Financed</span></li>
+                                                                    <li><span>Payed</span></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <ul>
+                                                                    <li class="visited"><span>Sent</span></li>
+                                                                    <li class="visited"><span>Agreed</span></li>
+                                                                    <li class="visited"><span>On offter</span></li>
+                                                                    <li class="active"><span>Financed</span></li>
+                                                                    <li><span>Payed</span></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <ul>
+                                                                    <li class="visited"><span>Sent</span></li>
+                                                                    <li class="visited"><span>Agreed</span></li>
+                                                                    <li class="visited"><span>On offter</span></li>
+                                                                    <li class="visited"><span>Financed</span></li>
+                                                                    <li class="active"><span>Payed</span></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single-body">
+                                            <div class="single-body-header">
+                                                <div class="invoices-title-bar-left">
+                                                    <h2>Invoices to pay</h2>
+                                                </div>
+                                                <div class="invoices-title-bar-right view">
+                                                    <div class="filter">
+                                                        <select name="" class="selectpicker">
+                                                            <option value="">Newest First</option>
+                                                            <option value="">Oldest First</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="invoices-list single">
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <div class="progresss-body">
+                                                                    <div style="width:90%" class="progress-arrow"></div>
+                                                                </div>
+                                                                <p>Due in <span>2 days</span></p>
+                                                            </td>
+                                                            <td class="option"><a class="pay" href="#">Pay</a><i class="fa fa-check-circle"></i><i class="fa fa-ban"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <div class="progresss-body">
+                                                                    <div style="width:90%" class="progress-arrow"></div>
+                                                                </div>
+                                                                <p>Due in <span>2 days</span></p>
+                                                            </td>
+                                                            <td class="option"><a class="pay" href="#">Pay</a><i class="fa fa-check-circle"></i><i class="fa fa-ban"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <div class="progresss-body">
+                                                                    <div style="width:75%" class="progress-arrow"></div>
+                                                                </div>
+                                                                <p>Due in <span>4 days</span></p>
+                                                            </td>
+                                                            <td class="option ok"><a class="pay" href="#">Pay</a><i class="fa fa-check-circle"></i><i class="fa fa-ban"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <div class="progresss-body">
+                                                                    <div style="width:60%" class="progress-arrow good"></div>
+                                                                </div>
+                                                                <p>Due in <span>8 days</span></p>
+                                                            </td>
+                                                            <td class="option ok"><a class="pay" href="#">Pay</a><i class="fa fa-check-circle"></i><i class="fa fa-ban"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <div class="progresss-body">
+                                                                    <div style="width:50%" class="progress-arrow best"></div>
+                                                                </div>
+                                                                <p>Due in <span>15 days</span></p>
+                                                            </td>
+                                                            <td class="option ok"><a class="pay" href="#">Pay</a><i class="fa fa-check-circle"></i><i class="fa fa-ban"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="name">Techstars <span>Sent: 2016-01-15</span></td>
+                                                            <td class="black">£ 216.00</td>
+                                                            <td class="progresss">
+                                                                <div class="progresss-body">
+                                                                    <div style="width:50%" class="progress-arrow best"></div>
+                                                                </div>
+                                                                <p>Due in <span>15 days</span></p>
+                                                            </td>
+                                                            <td class="option ok"><a class="pay" href="#">Pay</a><i class="fa fa-check-circle"></i><i class="fa fa-ban"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sentinvoices" class="single-invoices tab-pane fade">
+                                <div class="single-tab-body">
+                                    <div class="invoices-title-bar">
+                                        <div class="invoices-title-bar-left">
+                                            <h2>Sent invoices</h2>
+                                        </div>
+                                        <div class="invoices-title-bar-right">
+                                            <div class="filter">
+                                                <button><i class="fa fa-filter"></i></button>
+                                                <select name="" class="selectpicker">
+                                                    <option value="">Only unarchived</option>
+                                                    <option value="">Archived</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-box">
+                                                <input type="text" placeholder="Search for invoice...">
+                                                <button type="submit" value="Search"><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="invoices-list">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Sent date</th>
+                                                    <th>Order#</th>
+                                                    <th>Reference</th>
+                                                    <th>Customer</th>
+                                                    <th>Amount</th>
+                                                    <th>Agreement</th>
+                                                    <th>Offered</th>
+                                                    <th>Financed</th>
+                                                    <th>Payment</th>
+                                                    <th>Due date</th>
+                                                    <th>Late fee</th>
+                                                    <th>Late interest</th>
+                                                    <th class="option">Options</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><i class="fa fa-tag"></i><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-ban"></i></td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><img src="img/chat.png" alt=""><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">£ 200.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td>£ 200.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">£ 200.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-trash"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-trash"></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="invoicestopay" class="single-invoices tab-pane fade">
+                                <div class="single-tab-body">
+                                    <div class="invoices-title-bar">
+                                        <div class="invoices-title-bar-left">
+                                            <h2>Invoices to pay</h2>
+                                        </div>
+                                        <div class="invoices-title-bar-right">
+                                            <div class="filter">
+                                                <button><i class="fa fa-filter"></i></button>
+                                                <select name="" class="selectpicker">
+                                                    <option value="">Only unarchived</option>
+                                                    <option value="">Archived</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-box">
+                                                <input type="text" placeholder="Search for invoice...">
+                                                <button type="submit" value="Search"><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="invoices-list">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Received</th>
+                                                    <th>Order#</th>
+                                                    <th>Reference</th>
+                                                    <th>From</th>
+                                                    <th>Amount</th>
+                                                    <th>Late fee</th>
+                                                    <th>Late interest</th>
+                                                    <th>Due date</th>
+                                                    <th>Agreement</th>
+                                                    <th>Payment</th>
+                                                    <th class="option">Options</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="black">2016-02-15 <span class="excl"><i class="fa fa-exclamation-circle"></i></span></td>
+                                                    <td class="black agreement"><i class="fa fa-check-circle"></i><i class="fa fa-ban"></i></td>
+                                                    <td class="black"><a class="pay" href="#">Pay</a></td>
+                                                    <td class="option"><img src="img/chat-1.png" alt=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="black">2016-02-15 <span class="excl"><i class="fa fa-exclamation-circle"></i></span></td>
+                                                    <td class="black agreement"><i class="fa fa-check-circle"></i><i class="fa fa-ban"></i></td>
+                                                    <td class="black"><a class="pay" href="#">Pay</a></td>
+                                                    <td class="option"><img src="img/chat-1.png" alt=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="black">2016-02-15 <span class="excl"><i class="fa fa-exclamation-circle"></i></span></td>
+                                                    <td class="black agreement ok"><i class="fa fa-check-circle"></i></td>
+                                                    <td class="black"><a class="pay" href="#">PAY</a></td>
+                                                    <td class="option"><img src="img/chat.png" alt=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black agreement ok"><i class="fa fa-check-circle"></i></td>
+                                                    <td class="payed"><i class="fa fa-check"></i> PAYED</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-trash"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black agreement ok"><i class="fa fa-check-circle"></i></td>
+                                                    <td class="payed"><i class="fa fa-check"></i> PAYED</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-trash"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black agreement ok"><i class="fa fa-check-circle"></i></td>
+                                                    <td class="payed"><i class="fa fa-check"></i> PAYED</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-trash"></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="drafts" class="single-invoices tab-pane fade">
+                                <div class="single-tab-body">
+                                    <div class="invoices-title-bar">
+                                        <div class="invoices-title-bar-left">
+                                            <h2>Sent invoices</h2>
+                                        </div>
+                                        <div class="invoices-title-bar-right">
+                                            <div class="filter">
+                                                <button><i class="fa fa-filter"></i></button>
+                                                <select name="" class="selectpicker">
+                                                    <option value="">Only unarchived</option>
+                                                    <option value="">Archived</option>
+                                                </select>
+                                            </div>
+                                            <div class="search-box">
+                                                <input type="text" placeholder="Search for invoice...">
+                                                <button type="submit" value="Search"><i class="fa fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="invoices-list">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Sent date</th>
+                                                    <th>Order#</th>
+                                                    <th>Reference</th>
+                                                    <th>Customer</th>
+                                                    <th>Amount</th>
+                                                    <th>Agreement</th>
+                                                    <th>Offered</th>
+                                                    <th>Financed</th>
+                                                    <th>Payment</th>
+                                                    <th>Due date</th>
+                                                    <th>Late fee</th>
+                                                    <th>Late interest</th>
+                                                    <th class="option">Options</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><i class="fa fa-tag"></i><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-ban"></i></td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><img src="img/chat.png" alt=""><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">£ 200.00</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td>£ 200.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-times-circle-o"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">£ 200.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-trash"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2016-01-15</td>
+                                                    <td class="black">23441</td>
+                                                    <td>JAU82</td>
+                                                    <td class="black">Techstars</td>
+                                                    <td class="black">£ 216.00</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black"><i class="fa fa-check"></i></td>
+                                                    <td class="black">2016-02-15</td>
+                                                    <td class="black">-</td>
+                                                    <td class="black">6%</td>
+                                                    <td class="option"><a href="#"><i class="fa fa-trash"></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    				</div>
+    			</div>
+                <div id="creat-invoice" class="row">
+                    <div class="col-sm-12">
+                        <div class="new-invoice-title">
+                            <h2>New invoice</h2>
+                            <div class="progress-new">
+                                <ul>
+                                    <li id="progress-1" class="active"><span>Customer</span></li>
+                                    <li id="progress-2"><span>Template</span></li>
+                                    <li id="progress-3"><span>Details & Send</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="new-invoice-list">
+                            <div id="invoice-1" class="new-single-invoice">
+                                <div class="pagi-buttons">
+                                   <button id="next-1" class="next"><img src="img/arrow.png" alt=""></button> 
+                                </div>
+                                <div class="new-single-invoice-search">
+                                    <input type="text" placeholder="Start typing customer...">
+                                </div>
+                                <div class="new-single-invoice-suggest">
+                                    <h2>Popular customers</h2>
+                                    <ul>
+                                        <li><span class="left-text">Techstars <span>375 deals</span></span><span class="right-text">last invoiced 2 days ago</span></li>
+                                        <li><span class="left-text">London Coffe Inc <span>172 deals</span></span><span class="right-text">last invoiced 6 days ago</span></li>
+                                        <li><span class="left-text">Orion Itd. <span>48 deals</span></span><span class="right-text">last invoiced 2 days ago</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="invoice-2" class="new-single-invoice">
+                                <div class="pagi-buttons">
+                                   <button id="next-2" class="next"><img src="img/arrow.png" alt=""></button> 
+                                   <button id="next-3" class="prev"><img src="img/arrow-p.png" alt=""></button> 
+                                </div>
+                                <div class="template">
+                                    <div class="template-title">
+                                        <h2>Choose a template</h2>
+                                    </div>
+                                    <div class="template-part">
+                                        <div class="template-list">
+                                            <ul>
+                                                <li><button>Blank</button></li>
+                                                <li><button>Template 1</button></li>
+                                                <li><button>Template 2</button></li>
+                                            </ul>                                        
+                                        </div>
+                                        <div class="upload-template">
+                                            <input id="new-template" type="file">
+                                            <label for="new-template"><img src="img/plus.png" alt=""></label>        
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="invoice-3" class="new-single-invoice">
+                                <div class="pagi-buttons">
+                                   <button id="next-4" class="prev"><img src="img/arrow-p.png" alt=""></button> 
+                                </div>
+                                <div class="send-template">
+                                    <div class="send-template-header">
+                                        <div class="send-template-header-title">
+                                            <h2>New invoice to Techstars</h2>
+                                        </div>
+                                        <div class="send-template-header-body">
+                                            <div class="send-template-header-body-left">
+                                                <p><input type="text" placeholder="Purchase number"></p>
+                                                <p class="ammount"><input type="number" placeholder="Amount"><span>£</span></p>
+                                                <h4>EXCLUDING VAT</h4>
+                                            </div>
+                                            <div class="send-template-header-body-right">
+                                                <ul>
+                                                    <li><img src="img/l-icon-1.png" alt="">Techstars</li>
+                                                    <li><img src="img/l-icon-2.png" alt="">30 days from invoice is sent</li>
+                                                    <li><img src="img/l-icon-3.png" alt="">6 % late interest</li>
+                                                    <li><img src="img/l-icon-4.png" alt="">No discount</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="send-template-footer">
+                                        <div class="send-template-footer-left">
+                                            <h2>0.00</h2>
+                                            <p>calculated amount including vat</p>
+                                        </div>
+                                        <div class="send-template-footer-right">
+                                            <button type="submit"><i class="fa fa-paper-plane-o"></i>Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    		</div>
+    	</div>
+		
+		<!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

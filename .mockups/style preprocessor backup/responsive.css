@@ -1,0 +1,47 @@
+/* Small Desktop Layout */
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+	.menu ul li a,.menu ul li.active a {padding: 15px 30px;font-size: 13px;}
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.single-body {margin-bottom: 30px;}
+.menu ul li a, .menu ul li.active a {padding: 12px 25px;font-size: 11px;margin-right: 0;}
+.menu ul li a span {height: 20px;width: 20px;}
+.invoices-list table tbody tr td.progresss ul li.visited::after {width: 70px;}
+.invoices-list table tbody tr td.progresss ul li.visited:nth-child(2)::after {width: 105px;}
+.invoices-list table tbody tr td.progresss ul li.visited:nth-child(3)::after {width: 105px;}
+.invoices-list table tbody tr td.progresss ul li.visited:nth-child(4)::after {width: 96px;}
+#sentinvoices,#invoicestopay,#drafts {width: 100%;overflow-x: scroll;}
+.single-tab-body {width: 1090px;}
+}
+
+
+/* Mobile Small Layout */
+@media only screen and (max-width: 767px) { 
+.header-top ul li a {margin-right: 13px;}
+.header-top ul ,.header-title{text-align: center;}
+.menu ul li {display: block;}
+.menu ul li a {margin-right: 0;}
+.main-body-title {top: -45px;right: 50%;margin-right: -95px;}
+#sentinvoices,#invoicestopay,#drafts {width: 100%;overflow-x: scroll;}
+.single-tab-body {width: 1090px;}
+.single-body{width: 585px;}
+.single-body {margin-bottom: 30px;}
+.tab-content .col-md-6{width: 100%;overflow-x: scroll;}
+.header-title{overflow: hidden;}
+.header-title h2 {float: left;}
+.navbar-toggle {margin-top: 14px;margin-right: 0;margin-bottom: 0;background-image: none;border: 1px solid #fff;}
+.navbar-toggle .icon-bar {background: #fff;}
+.new-invoice-title {margin-top: 25px;}
+.new-single-invoice-search input[type="text"] {font-size: 28px;}
+.new-single-invoice button.prev {left: -10px;}
+.new-single-invoice button.next {right: -10px;}
+.template-list {float: none;width: 100%;}
+.template-list ul li {display: block;margin: 0 auto 30px auto;}
+.upload-template {float: none;width: 125px;margin: auto;}
+.send-template-header-body-left {float: none;width: 100%;}
+.send-template-header-body-right {float: none;width: 100%;margin-top: 30px;}
+.send-template-footer-left {float: none;width: 100%;text-align: center;}
+.send-template-footer-right {float: none;width: 137px;margin: 30px auto 0 auto;}
+}

@@ -1,0 +1,88 @@
+
+//
+@import "variables";
+@import '{reywood:bootstrap3-sass}/bootstrap';
+//
+@import "navbar";
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300);
+
+body > .container {
+  min-height: 500px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.panel-invoice-info {
+  & > .panel-body {
+    padding: 0;
+    & > table > tr > td {
+      padding: 8px 15px !important;
+    }
+  }
+}
+
+.btn-group {
+  white-space: nowrap;
+  > .btn {
+    float: inherit;
+  }
+  > .btn + .btn {
+    margin-left: -4px;
+  }
+}
+
+.invoices-list {
+  > tbody > tr > td {
+    line-height: 16px;
+  }
+  > tbody > tr > td > span {
+    display: block;
+  }
+}
+
+
+
+.footer {
+  margin-top: 30px;
+  border-top: 1px solid #e7e7e7;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  font-size: 50px;
+  color: #ccc;
+}
+
+@for $i from 1 through 8 {
+  .spacer#{$i*10} {
+    height: $i*10px;
+  }
+}
+
+.control-radio-padded {
+  padding-left: 35px;
+  padding-top:  1px;
+}
+
+
+.fa-invoice-New:before {
+  content: "\f1db";
+}
+.fa-invoice-Agreed:before {
+  content: "\f164";
+}
+.fa-invoice-Offered:before {
+  content: "\f1d8";
+}
+.fa-invoice-Financed:before {
+  content: "\f19c";
+}
+.fa-invoice-Paid:before {
+  content: "\f0d6";
+}
+.fa-invoice-Closed:before {
+  content: "\f023";
+}
+
+

@@ -1,0 +1,145 @@
+    <!doctype html>
+    <html class="no-js" lang="">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Title</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+      <link rel="shortcut icon" href="img/favicon/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" href="img/favicon/apple-touch-icon.png">
+
+      <!-- Fonts -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link href='fonts/fonts.css' rel='stylesheet' type='text/css'>
+
+      <!-- Stylesheet -->
+      <link rel="stylesheet" href="css/bootstrap-select.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+
+        </head>
+        <body>
+
+          <div class="header-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="header-top">
+                    <ul>
+                      <li><a href="#">Invoices</a></li>
+                      <li><a href="#">Customers</a></li>
+                      <li><a href="#">Analytics</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="header-title">
+                    <h2>Invoices</h2>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".menu" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>              
+                </div>
+              </div>
+              <div class="row">
+               <div class="col-sm-12">
+                 <div class="menu collapse navbar-collapse">
+                  <ul>
+                   <li class="active"><a data-toggle="tab" href="#invoiceoverview">invoice overview</a></li>
+                   <li><a data-toggle="tab" href="#sentinvoices">sent invoices</a></li>
+                   <li><a data-toggle="tab" href="#invoicestopay">invoices to pay<span>3</span></a></li>
+                   <li><a data-toggle="tab" href="#drafts">drafts</a></li>
+                 </ul>
+               </div>           
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div class="main-body-area">
+        <div class="container main-body">
+          <div class="col-md-12">
+            
+
+                
+             <div class="row">
+        <div class="col-md-12">
+          {{#if organization}}
+              <h1>{{organization.name}}</h1>
+              <div class="alert alert-info" role="alert">
+                  On this page you can view and edit your profile information.
+              </div>
+              <ul class="nav nav-tabs">
+                  <li role="presentation" class="active">
+                      <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a>
+                  </li>
+                  <li role="presentation">
+                      <a href="#contacts" aria-controls="contacts" role="tab" data-toggle="tab">Contact information</a>
+                  </li>
+                  <li role="presentation">
+                      <a href="#preferences" aria-controls="preferences" role="tab" data-toggle="tab">Preferences</a>
+                  </li>
+                  <li role="presentation">
+                      <a href="#users" aria-controls="users" role="tab" data-toggle="tab">Users</a>
+                  </li>
+                  <li role="presentation">
+                      <a href="#suppliers" aria-controls="suppliers" role="tab" data-toggle="tab">Suppliers</a>
+                  </li>
+              </ul>
+              <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="profile">
+                    {{> organizationProfile}}
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="contacts">
+                    {{> organizationContacts}}
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="preferences">
+                    {{> organizationPreferences}}
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="users">
+                    {{> organizationUsers}}
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="suppliers">
+                    {{> organizationSuppliers}}
+                  </div>
+              </div>  
+          {{else}}
+              <h1>New organization</h1>
+              {{> organizationProfile}}
+          {{/if}}
+        </div>
+    </div>   
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+  </html>

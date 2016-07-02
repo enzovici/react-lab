@@ -1,0 +1,7 @@
+{
+  "name": "wrapper-js",
+  "version": "1.0.0",
+  "description": "wrapper API Client",
+  "main": "wrapper.js",
+  "author": "Edward Ruchevits"
+}
