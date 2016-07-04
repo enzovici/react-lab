@@ -2,22 +2,17 @@ import React from 'react'
 import { Route, IndexRoute } from 'react-router'
 import App from './components/App'
 import Dashboard from './components/dashboard/dashboard'
-import Invoices from './components/invoices/invoices'
-import Invoice from './components/invoices/invoice'
-import Organizations from './components/organizations/organizations'
-import Organization from './components/organizations/organization'
+import CoursesPage from './components/courses/CoursesPage'
+import ManageCoursePage from './components/courses/ManageCoursePage'
 import NotFound from './components/common/not_found'
 
 
 export default (
   <Route path='/' component={App}>
     <IndexRoute component={Dashboard} />
-    <Route path='/invoices' component={Invoices} />
-    <Route path='/organizations' component={Organizations} />
-
-    <Route path="/invoices/:id" component={Invoice}/>
-    <Route path="/organizations/:id" component={Organization}/>
-
+    <Route path='courses' component={CoursesPage} />
+    <Route path='course' component={ManageCoursePage} />
+    <Route path='course/:id' component={ManageCoursePage} />
     <Route path='*' component={NotFound} />
 
   </Route>

@@ -27,6 +27,6 @@ class OrganizationsSelect extends React.Component {
       mainStore : state.mainStore   //  key is the props, value the store
     }
   }
-  
+
   //mapDispatchToProps??
   export default connect(mapStateToProps)(OrganizationsSelect)

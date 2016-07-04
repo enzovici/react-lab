@@ -7,25 +7,13 @@ class Dashboard extends React.Component {
     super(props, context)
   }
 
-  subOrgList (orgs) {
-    let rows = []
-    orgs.forEach((org, _) => {
-      let organization
-      organization = (<p key={`org_rec_${org.id}`} organization={org}> {org.details.profile.name} </p>)
-      rows.push(organization)
-    })
-    return rows
-  }
+
 
   render () {
-    let coinbase = this.props.mainStore.coinbase
     return (
 
       <div>
-        <h3>Organizations:</h3>
-        <div>{this.subOrgList(coinbase.organizations)}</div>
-        <div className='s40'></div>
-        <p>coinbase: {coinbase.coinbase} </p>
+        <h3>DAshboard:</h3>
       </div>
     )
   }
