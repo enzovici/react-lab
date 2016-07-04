@@ -1,4 +1,5 @@
-# Tallysticks DAPP
+# REACT LAB
+Experimenting with REACT
 
 ## Get Started
 1. **Install dependencies**. `npm install`
